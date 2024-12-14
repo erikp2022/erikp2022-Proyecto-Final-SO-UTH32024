@@ -1,0 +1,27 @@
+<?php
+
+return [
+    "translations" => 'Translations',
+    "languages" => 'Languages',
+    "language_name" => 'Language Name',
+    "locale" => 'Locale',
+    "action" => 'Action',
+    "add" => 'Add',
+    "publish" => 'Publish',
+    "add_language" => 'Add Language',
+    "back" => 'Back',
+    "save" => 'Save',
+    "key" => 'Key',
+    "value" => 'Value',
+    "update" => 'Update',
+    "add_translation" => 'Add Translation',
+    "language_added" => 'Language Successfully Added',
+    "translation_updated" => 'Language Successfully Updated',
+    "translation_update_fail" => 'Translation Update fail!',
+    "translation_added" => 'Translation Successfully Added',
+    "translation_add_fail" => 'Translation Add fail!',
+    "translation_successfully_published" => 'Translation Successfully Published',
+    "translation_publish_fail" => 'Translation Publish Fail! No Translation Found in DB.',
+    "translation_successfully_imported" => 'Translation Successfully Imported',
+    "import_translation" => 'Import Translation',
+];

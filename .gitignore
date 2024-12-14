@@ -1,0 +1,31 @@
+node_modules/
+npm-debug.log
+
+.idea/
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+# Ignorar la carpeta vendor
+vendor/
+
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env.*.php
+.env.php
+*.zip
+
+Homestead.yaml
+Homestead.json
+
+# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
+.rocketeer/
+.idea/workspace.xml
+public/scss/style.css.map
+public/css/app.css
+public/css/app.css
+public/css/app.css
+.DS_Store

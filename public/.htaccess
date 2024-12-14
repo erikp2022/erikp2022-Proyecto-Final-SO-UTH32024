@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    # Configuración de codificación
+    AddDefaultCharset UTF-8
+    <IfModule mod_headers.c>
+        Header set Content-Type "text/html; charset=UTF-8"
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirigir a HTTPS si es necesario
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Redirigir todo a index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
